@@ -1,1 +1,9 @@
 # CS-320-T5617-Software-Test-Automation-QA-22EW5
+
+The JUnit tests are implemented as a first level test that focuses on the functionality of the method and object. According to Garcia, “units are combined to create composite components. Integration testing should focus on testing components, interfaces” (2017 p20). Integration testing is always implemented after unit tests are complete. Both testing roles JUnit and Integration are usually taken by different software engineers and testers but ideally no one person is asked to take on both roles. Usually when unit and integration tests are complete the system is then tested, which basically a test of all the integrated components.
+	The general mindset when working on software testing is to be cautious throughout the entire process. Unit tests are among the first types of tests conducted during the SDLC and caution is advised because anything missed at this stage may be costly if spotted down the road of development. Understanding fully the requirements and the terminology used to setup tests was a key attribute in developing functional JUnit test. A great example is when the test was supposed to throw an Illegal Exception if the string input was too long a case in point below,
+  void testStringLength(){
+     Assertion.assertThrows(IllegalArgumentException,class() ->{
+	});
+  }
+Trying to avoid being biased when testing code has always been the key to a good and accurate test. It poses issues when developers test their own code that is why most organizations prefer to keep the two separate. A more effective test-coding team can be derived from assign separate roles. All testing elements are focused on without any intentional or unintentional erring, as well as maintaining all testing parameters throughout the tests. An example, initially the Contact Service class was missing validation for null and lengths, tests for the Contact class, and extra delete field. 
